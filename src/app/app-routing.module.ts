@@ -28,6 +28,7 @@ import { Wfc2registerComponent } from './website/forms/wfc2register/wfc2register
 import { ResponseComponent } from './website/response/response.component';
 import { CampusComponent } from './website/campus/campus.component';
 import { YouthComponent } from './website/church/youth/youth.component';
+import { SaltComponent } from './website/church/salt/salt.component';
 import { PolicyComponent } from './website/policy/policy.component';
 import { DiscipleshipComponent } from './website/discipleship/discipleship.component';
 import { EwgtamilregisterComponent } from './website/forms/ewgtamilregister/ewgtamilregister.component';
@@ -48,25 +49,26 @@ const routes: Routes = [
   { path: 'marriage',         component: MarriageComponent },
   { path: 'premarital',         component: PremaritalComponent },
   { path: 'parenting',         component: ParentingComponent },
-  { path: 'serve',        component:ServeComponent},
-  { path: 'calendar',       component:CalendarComponent},
-  { path: 'contact',        component:ContactComponent},
-  { path: 'give',       component:GiveComponent},
-  { path: 'sermons',       component:SermonsComponent},
-  { path: 'staff',       component:StaffComponent},
-  { path: 'story',       component:StoryComponent},
-  { path: 'beliefs',       component:BeliefsComponent},
-  { path: 'ewgregister',       component:EwgregisterComponent},
-  { path: 'wfc1register',       component:Wfc1registerComponent},
-  { path: 'wfc2register',       component:Wfc2registerComponent},
-  { path: 'response',       component:ResponseComponent},
-  { path: 'campus',       component:CampusComponent},
-  { path: 'youth',       component:YouthComponent},
-  { path: 'policy',       component:PolicyComponent},
-  { path: 'discipleship',       component:DiscipleshipComponent},
-  { path: 'ewgtamilregister',       component:EwgtamilregisterComponent},
-  { path: 'gpc',       component:GpcComponent},
-  { path: 'gpcregister',       component:GpcregisterComponent},
+  { path: 'serve',        component: ServeComponent},
+  { path: 'calendar',       component: CalendarComponent},
+  { path: 'contact',        component: ContactComponent},
+  { path: 'give',       component: GiveComponent},
+  { path: 'sermons',       component: SermonsComponent},
+  { path: 'staff',       component: StaffComponent},
+  { path: 'story',       component: StoryComponent},
+  { path: 'beliefs',       component: BeliefsComponent},
+  { path: 'ewgregister',       component: EwgregisterComponent},
+  { path: 'wfc1register',       component: Wfc1registerComponent},
+  { path: 'wfc2register',       component: Wfc2registerComponent},
+  { path: 'response',       component: ResponseComponent},
+  { path: 'campus',       component: CampusComponent},
+  { path: 'youth',       component: YouthComponent},
+  { path: 'salt',       component: SaltComponent},
+  { path: 'policy',       component: PolicyComponent},
+  { path: 'discipleship',       component: DiscipleshipComponent},
+  { path: 'ewgtamilregister',       component: EwgtamilregisterComponent},
+  { path: 'gpc',       component: GpcComponent},
+  { path: 'gpcregister',       component: GpcregisterComponent},
 ];
 
 @NgModule({

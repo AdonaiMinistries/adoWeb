@@ -43,50 +43,15 @@
       </div>
     </div>
   </div>
+
   <!-- Upcoming Dates -->
 
   <div class="subscribe-line mx-3" data-background-color="white">
-    <div class="container">
+     <div class="container">
           <h3 class="title text-dark text-md-start" style="margin-bottom: 2rem;">Upcoming Dates</h3>
-
-          <div class="text-dark mx-3 mx-md-4" *ngFor="let items of sortedArray; let i = index">
-            <div *ngIf="items.summary =='Wholeness and Freedom Conference - Part II'">
-              <div *ngIf="i < 15" class="row" style="align-items: center;">
-                  <div class="col-md-3 col-6">
-                      <div class="card-plain card-form-horizontal">
-                          <div class="card-content">
-                              <h5 class="text-dark" style="text-align: start; font-weight: 700;">{{items.sdate | date:'mediumDate'}}</h5>
-                              <h5 class="text-dark" style="text-align: start; margin-bottom: 0px;">{{ items.sdate | date:'shortTime' }}</h5>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-6">
-                      <div class="card-plain card-form-horizontal">
-                          <div class="card-content text-dark">
-                              <h4 class="text-dark" style="text-align: start; margin: 0 0;">{{ items.summary }}</h4>
-                          </div>
-                      </div>
-                  </div>
-                  <div *ngIf="items.summary =='Wholeness and Freedom Conference - Part II'" class="col-md-3 col-sm-6" style="text-align: -webkit-right;">
-                    <div class="card-plain card-form-horizontal">
-                        <div class="card-content text-dark">
-                          <button type="button" class="d-flex justify-content-start btn text-dark" style="border: 2px solid #111111 !important; font-weight: 600; background-color: white; font-size: medium;" [routerLink]="['/wfc2register']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-              <hr *ngIf="i < 15"/>
-            </div>
-        </div>
-    </div>
-  </div>
-
-
-  <!-- <div class="subscribe-line mx-3" data-background-color="white">
-    <div class="container">
-          <h3 class="title text-dark text-md-start" style="margin-bottom: 2rem;">Upcoming Dates</h3> -->
-            <!-- <div class="text-dark text-center mx-auto"> -->
-              <!-- <div class="row ">
+          <!--<h5 class="title text-dark text-md-start" style="margin-bottom: 2rem;">Will Be Announced Soon</h5>
+              <div class="text-dark text-center mx-auto"> 
+                <div class="row ">
                   <div class="col-md-8 col-sm-12" style="align-self: center;">
                             <div class="row mx-auto">
                               <div class="col-4 col-md-4" style="align-self: center;">
@@ -99,17 +64,18 @@
                                 <h5 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">DEHRADUN / ENG</h5>
                               </div>
                             </div>
-                  </div>
-                  <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
-                            <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" [routerLink]="['/wfc2register']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                  </div>
-              </div>
-              <hr/> -->
-              <!-- <div class="row">
+                  </div> 
+                    <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
+                        <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" [routerLink]="['/wfc2register']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
+                    </div>
+                </div> 
+              </div> -->
+
+             <div class="row">
                 <div class="col-md-8 col-sm-12" style="align-self: center;">
                           <div class="row mx-auto">
                             <div class="col-4 col-md-4" style="align-self: center;">
-                              <h2 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">04-08</h2>
+                              <h2 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">03-07</h2>
                             </div>
                             <div class="col-3 col-md-3" style="align-self: center;">
                               <h6 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">Nov<br>Mon-Fri</h6>
@@ -122,11 +88,9 @@
                 <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
                           <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" [routerLink]="['/wfc2register']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
                 </div>
-              </div> -->
-              <!-- <hr/>
-          </div>
-      </div>
-  </div> -->
+              </div> 
+      </div> 
+   </div>
 
   <!-- Bangalore Cost Venue Contact -->
   <div class="section" style="padding-top: 0rem; background-color:#EAD8F5;">
