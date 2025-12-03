@@ -17,7 +17,8 @@ export class UserService {
   constructor(private http: HttpClient, private tokenAccess: TokenStorageService) { }
 
   getPublicContent(): Observable<any> {
-    return this.http.get(API_URL + '/projects/4496867/videos?per_page=9&access_token=' + this.tokenAccess.userToken());
+    return this.http.get(API_URL + '/videos?per_page=9&access_token=' + this.tokenAccess.userToken());
+    // return this.http.get(API_URL + '/projects/4496867/videos?per_page=9&access_token=' + this.tokenAccess.userToken());
   };
 
 /*  getPage(i : any): Observable<any> {
@@ -53,3 +54,4 @@ export class UserService {
   } */
 
 }
+
