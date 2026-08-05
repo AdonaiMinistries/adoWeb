@@ -7,7 +7,7 @@
 
         .container{
             > .content-center{
-                top: 37%;
+                top: 40%;
             }
         }
     }
@@ -154,7 +154,7 @@
               }
             }
         }
-        .carousel-control-prev,
+        .carousel-control-prev
         {
             span{
               background-image: none !important;
@@ -168,7 +168,7 @@
                 text-transform: none;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
-              }
+                }
             }
         }
     }
@@ -323,7 +323,7 @@
 
     .title{
         text-align: center;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .category{

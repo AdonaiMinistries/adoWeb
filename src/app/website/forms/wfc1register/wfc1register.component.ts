@@ -48,10 +48,10 @@ export class Wfc1registerComponent implements OnInit, OnDestroy, AfterViewInit {
     // dehNonresChild:number = 2800;
 
     // Bangalore Registration Amounts
-    res = 9000;
-    nonres = 5000;
-    resChild = 6300;
-    nonresChild = 3500;
+    res = 10000;
+    nonres = 6000;
+    resChild = 7000;
+    nonresChild = 4200;
 
     // Pre-registration
     preAmt = 1000;

@@ -42,17 +42,17 @@ export class Wfc2registerComponent implements OnInit, OnDestroy, AfterViewInit {
 
     amnt:number = 0;
 
-    // Dehradun Registration Amounts
+    //Dehradun Registration Amounts
     dehRes:number = 6000;
     dehNonres:number = 4000;
     dehResChild:number = 4200;
     dehNonresChild:number = 2800;
 
     // Bangalore Registration Amounts
-    res = 8000;
-    nonres = 5000;
-    resChild = 4800;
-    nonresChild = 3500;
+    res = 9000;
+    nonres = 6000;
+    resChild = 6300;
+    nonresChild = 4200;
 
     // Pre-registration
     preAmt = 1000;

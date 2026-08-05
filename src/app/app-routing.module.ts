@@ -4,6 +4,7 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { WebsiteComponent } from './website/website.component';
 import { CellsComponent } from './website/church/cells/cells.component';
+import { AbsComponent} from './website/abs/abs.component';
 import { EwgComponent } from './website/ministry/ewg/ewg.component';
 import { Wfc1Component } from './website/ministry/wfc1/wfc1.component';
 import { Wfc2Component } from './website/ministry/wfc2/wfc2.component';
@@ -26,7 +27,7 @@ import { EwgregisterComponent } from './website/forms/ewgregister/ewgregister.co
 import { Wfc1registerComponent } from './website/forms/wfc1register/wfc1register.component';
 import { Wfc2registerComponent } from './website/forms/wfc2register/wfc2register.component';
 import { ResponseComponent } from './website/response/response.component';
-import { CampusComponent } from './website/campus/campus.component';
+//import { CampusComponent } from './website/campus/campus.component';
 import { YouthComponent } from './website/church/youth/youth.component';
 import { SaltComponent } from './website/church/salt/salt.component';
 import { PolicyComponent } from './website/policy/policy.component';
@@ -57,11 +58,12 @@ const routes: Routes = [
   { path: 'staff',       component: StaffComponent},
   { path: 'story',       component: StoryComponent},
   { path: 'beliefs',       component: BeliefsComponent},
+  { path: 'abs',       component: AbsComponent},
   { path: 'ewgregister',       component: EwgregisterComponent},
   { path: 'wfc1register',       component: Wfc1registerComponent},
   { path: 'wfc2register',       component: Wfc2registerComponent},
   { path: 'response',       component: ResponseComponent},
-  { path: 'campus',       component: CampusComponent},
+  //{ path: 'campus',       component: CampusComponent},
   { path: 'youth',       component: YouthComponent},
   { path: 'salt',       component: SaltComponent},
   { path: 'policy',       component: PolicyComponent},

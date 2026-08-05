@@ -38,8 +38,12 @@
                   <div class="col-md-3 col-6">
                       <div class="card-plain card-form-horizontal">
                           <div class="card-content">
-                              <h5 class="text-dark" style="text-align: start; font-weight: 700;">{{items.sdate | date:'mediumDate'}}</h5>
-                              <h5 class="text-dark" style="text-align: start; margin-bottom: 0px;">{{ items.sdate | date:'shortTime' }}</h5>
+                            
+                              <h5 class="text-dark" style="text-align: start; font-weight: 700;">
+                                {{ items.sdate | date:'MMM d' }} – {{ items.edate | date:'d, y' }} </h5>
+                               <!-- {{ items.sdate | date:'MMM d' }} – {{ items.edate | date:'d, yyyy' }} </h5>-->
+                               <!-- {{items.sdate | date:'mediumDate'}} </h5>-->
+                              <h5 class="text-dark" style="text-align: start; margin-bottom: 0px;">{{ items.sdate | date:'shortTime' }} </h5>
                           </div>
                       </div>
                   </div>
@@ -109,134 +113,41 @@
                 </div>
               </div>
               <hr/> -->
-              <!-- <div class="row">
-                <div class="col-md-8 col-sm-12" style="align-self: center;">
-                          <div class="row mx-auto">
-                            <div class="col-4 col-md-4" style="align-self: center;">
-                              <h2 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">09-10</h2>
-                            </div>
-                            <div class="col-3 col-md-3" style="align-self: center;">
-                              <h6 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">Mar<br>Sat-Sun</h6>
-                            </div>
-                            <div class="col-5 col-md-5" style="align-self: center;">
-                              <h5 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">BANGALORE / ENG</h5>
-                            </div>
-                          </div>
-                </div>
-                <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
-                          <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" [routerLink]="['/ewgregister']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                </div>
-              </div>
-              <hr/> -->
-              <!-- <div class="row">
-                <div class="col-md-8 col-sm-12" style="align-self: center;">
-                          <div class="row mx-auto">
-                            <div class="col-4 col-md-4">
-                              <h2 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">13-14</h2>
-                            </div>
-                            <div class="col-3 col-md-3" style="align-self: center;">
-                              <h6 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">June<br>Sat-Sun</h6>
-                            </div>
-                            <div class="col-5 col-md-5" style="align-self: center;">
-                              <h5 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">BANGALORE / ENG</h5>
-                            </div>
-                          </div>
-                </div>
-                <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
-                          <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" routerLink="['/ewgregister']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                </div>
-              </div>
-              <hr/> -->
-              <!-- <div class="row">
-                <div class="col-md-8 col-sm-12" style="align-self: center;">
-                          <div class="row mx-auto">
-                            <div class="col-4 col-md-4" style="align-self: center;">
-                              <h2 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">13-14</h2>
-                            </div>
-                            <div class="col-3 col-md-3" style="align-self: center;">
-                              <h6 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">July<br>Sat-Sun</h6>
-                            </div>
-                            <div class="col-5 col-md-5" style="align-self: center;">
-                              <h5 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">BANGALORE / ENG</h5>
-                            </div>
-                          </div>
-                </div>
-                <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
-                          <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" [routerLink]="['/ewgregister']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                </div>
-              </div>
-              <hr/> -->
-              <!-- <div class="row">
-                <div class="col-md-8 col-sm-12" style="align-self: center;">
-                          <div class="row mx-auto">
-                            <div class="col-4 col-md-4" style="align-self: center;">
-                              <h2 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">14-15</h2>
-                            </div>
-                            <div class="col-3 col-md-3" style="align-self: center;">
-                              <h6 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">Sep<br>Sat-Sun</h6>
-                            </div>
-                            <div class="col-5 col-md-5" style="align-self: center;">
-                              <h5 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">BANGALORE / ENG</h5>
-                            </div>
-                          </div>
-                </div>
-                <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
-                          <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" [routerLink]="['/ewgregister']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                </div>
-              </div>
-              <hr/> -->
-              <!-- <div class="row">
-                <div class="col-md-8 col-sm-12" style="align-self: center;">
-                          <div class="row mx-auto">
-                            <div class="col-4 col-md-4" style="align-self: center;">
-                              <h2 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">16-17</h2>
-                            </div>
-                            <div class="col-3 col-md-3" style="align-self: center;">
-                              <h6 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">Nov<br>Sat-Sun</h6>
-                            </div>
-                            <div class="col-5 col-md-5" style="align-self: center;">
-                              <h5 class="text-dark mb-0" style="text-align: start; font-weight: 700; ">BANGALORE / ENG</h5>
-                            </div>
-                          </div>
-                </div>
-                <div class="col-md-4 col-sm-12 text-end" style="align-self: center;">
-                          <button type="button" class="btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: white; font-size: medium;" [routerLink]="['/ewgregister']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                </div>
-              </div>
-              <hr/> -->
-
-          <!-- </div> -->
       </div>
   </div>
 
   <!-- Cost Venue Contact -->
-  <div class="section" style="padding-top: 0rem; background-color:#E5EDFF;">
-    <div class="container mx-auto">
-                  <div class="row text-dark mx-3">
-                      <div class="col-sm-3">
-                          <div class="text-start">
-                              <h4 class="title text-dark text-start">Cost</h4>
-                              <h6 style="font-size: small;">Rs. 700/-</h6>
-                              <p><em style="font-size:small;">Accommodation available at extra cost</em></p>
+  <div class="section" style="padding: 60px 40px; background-color:#E5EDFF;">
+    <div class="container mx-auto" >
+        
+        
+
+        <div class="row text-dark mx-3">
+            <div class="col-sm-3">
+            <div class="text-start">
+            <h4 class="title text-dark text-start">Cost</h4>
+            <h6 style="font-size: small;">Rs. 700/-</h6>
+             <p><em style="font-size:small;">Accommodation available at extra cost</em></p>
                                  <!-- <h6>For Children</h6>
                                  <p style="font-size: small;">
                                   12 Yrs. & Above - Full Cost<br>
                                   11 Yrs. to 6 Yrs. - 70% Cost<br>
                                   5 Yrs. & Below - Free
                                  </p> -->
-                          </div>
-                      </div>
-                      <div class="col-sm-3">
+            </div>
+        </div>
+      
+        <div class="col-sm-3">
                           <div class="text-start">
-                              <h4 class="title text-dark text-start">Venue</h4>
-                              <p style="font-size: small;">Adonai Church
+                                <h4 class="title text-dark text-start">Venue</h4>
+                                <p style="font-size: small;">Adonai Church
                                   <br>No 1-8, 3rd Main Rd,
                                   <br>Hoysala Nagar,
                                   <br>Bangalore 560016.
-                              </p>
-                          </div>
-                      </div>
-                      <div class="col-sm-3">
+                                </p>
+        </div>
+      </div>
+      <div class="col-sm-3">
                           <div class="text-start">
                               <h4 class="title text-dark text-start">Time</h4>
                               <h6>Sat: &nbsp;&nbsp;&nbsp;&nbsp;9 am – 5:30 pm<br>
@@ -244,18 +155,19 @@
                               </h6>
                           </div>
                       </div>
-                      <div class="col-sm-3">
-                          <div class="text-start">
+
+      <div class="col-sm-3">
+                          <div>
                               <h4 class="title text-dark text-start">Contact</h4>
-                              <p class="text-start mb-0" style="font-size:small;">Coordinator:</p>
-                              <h5 class="text-start" style="font-weight: 700;">Michael Fernandez</h5>
-                              <a type="button" class="btn phone" style="border: 2px solid #000000 !important; background-color: transparent; font-size: medium; color: #000000; font-weight: 700;" href="tel:+919886781749"><i class="fa fa-phone fa-lg" style="margin-right: 0.5rem; margin-top: 3px;"></i>+91 98867 81749</a>
+                              <!--<p class="text-start mb-0" style="font-size:small;">Coordinator:</p>
+                              <h5 class="text-start" style="font-weight: 700;">Michael Fernandez</h5> -->
+                              <a type="button" class="btn phone" style="border: 2px solid #000000 !important; background-color: transparent; font-size: medium; color: #000000; font-weight: 700;" href="tel:+916366100576"><i class="fa fa-phone fa-lg" style="margin-right: 0.5rem; margin-top: 3px;"></i>+91 63661 00576</a>
                               <h6 style="font-size: small;">Office timings:</h6>
                                 <p style="font-size: small;">9:00 am to 5:00 pm <br>(Tue to Sun)
                                   </p>
                           </div>
                       </div>
-                  </div>
+      </div>
     </div>
   </div>
 
@@ -290,6 +202,4 @@
       </div>
     </div>
   </div>
-
-
 </div>

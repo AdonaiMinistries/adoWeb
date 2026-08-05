@@ -32,7 +32,7 @@ import { EwgregisterComponent } from './forms/ewgregister/ewgregister.component'
 import { Wfc1registerComponent } from './forms/wfc1register/wfc1register.component';
 import { Wfc2registerComponent } from './forms/wfc2register/wfc2register.component';
 import { ResponseComponent } from './response/response.component';
-import { CampusComponent } from './campus/campus.component';
+//import { CampusComponent } from './campus/campus.component';
 import { YouthComponent } from './church/youth/youth.component';
 import { SaltComponent } from './church/salt/salt.component';
 import { PolicyComponent } from './policy/policy.component';
@@ -81,7 +81,7 @@ import { GpcregisterComponent } from './forms/gpcregister/gpcregister.component'
         Wfc1registerComponent,
         Wfc2registerComponent,
         ResponseComponent,
-        CampusComponent,
+        //CampusComponent,
         YouthComponent,
         SaltComponent,
         PolicyComponent,

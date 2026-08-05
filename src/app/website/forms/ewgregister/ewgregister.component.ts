@@ -48,10 +48,10 @@ export class EwgregisterComponent implements OnInit, OnDestroy, AfterViewInit {
     // dehNonresChild:number = 2800;
 
     // Bangalore Registration Amounts
-    res = 2100;
+    res = 1400;
     nonres = 700;
-    resChild = 1470;
-    nonresChild = 470;
+    resChild = 980;
+    nonresChild = 490;
 
     // Pre-registration
     preAmt = 300;
