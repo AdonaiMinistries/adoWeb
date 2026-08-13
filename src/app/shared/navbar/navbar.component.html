@@ -1,8 +1,10 @@
-<nav class="navbar fixed-top navbar-transparent navbar-absolute" color-on-scroll="500">
+<nav class="navbar fixed-top navbar-transparent navbar-absolute"
+     color-on-scroll="500"
+     style="top: 20px !important;">
   <div class="container-fluid mx-md-5 mx-3">
       <div class="navbar-translate mx-md-5">
           <a class="navbar-brand" [routerLink]="['']" placement="bottom">
-            <img [src]="logoPath" height="45px" alt="">
+            <img [src]="logoPath" height="45px" alt="" style="transform: translateY(10px);">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
               <span class="navbar-toggler-bar bar1"></span>
