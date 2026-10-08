@@ -1,13 +1,27 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
+
 import * as Rellax from 'rellax';
 
 @Component({
-  selector: 'app-campus',
-  templateUrl: './campus.component.html',
-  styleUrls: ['./campus.component.scss']
+  selector: 'app-abs',
+  templateUrl: './abs.component.html',
+  styleUrls: ['./abs.component.scss']
 })
-export class CampusComponent implements OnInit, OnDestroy, AfterViewInit {
+
+export class AbsComponent implements OnInit, OnDestroy, AfterViewInit {
+
+  model = {
+    left: true,
+    middle: false,
+    right: false
+};
+
+  constructor(config: NgbCarouselConfig) {
+    config.showNavigationArrows = false;
+		config.showNavigationIndicators = false;
+  }
 
   ngOnInit() {
 
@@ -24,7 +38,6 @@ export class CampusComponent implements OnInit, OnDestroy, AfterViewInit {
           var rellaxText = new Rellax('.rellax-text');
       }
     },200);
-
   }
 
   ngOnDestroy() {

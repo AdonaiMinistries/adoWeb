@@ -42,7 +42,7 @@ export class EwgtamilregisterComponent implements OnInit, OnDestroy, AfterViewIn
       amnt:number = 0;
 
       // Bangalore Registration Amounts
-      res = 500;
+      res = 1000;
       nonres = 500;
       resChild = 350;
       nonresChild = 350;

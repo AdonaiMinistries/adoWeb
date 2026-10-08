@@ -114,8 +114,8 @@ export class ResponseComponent implements OnInit, OnDestroy, AfterViewInit {
   downloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_self');
-    link.setAttribute('href', 'assets/files/WFC_I_General_Information_Letter_Jun24.pdf.pdf');
-    link.setAttribute('download', `WFC_I_General_Information_Letter_Jun24.pdf.pdf`);
+    link.setAttribute('href', 'assets/files/EWG_General_Information_Letter_2026.pdf');
+    link.setAttribute('download', `EWG_General_Information_Letter_2026.pdf`);
     link.click();
     link.remove();
   }
@@ -123,8 +123,8 @@ export class ResponseComponent implements OnInit, OnDestroy, AfterViewInit {
   downloadFile1() {
   const link = this.renderer.createElement('a');
   link.setAttribute('target', '_self');
-  link.setAttribute('href', 'assets/files/WFC_II_General_Information_Letter_Mar24.pdf');
-  link.setAttribute('download', `WFC_II_General_Information_Letter_Mar24.pdf`);
+  link.setAttribute('href', 'assets/files/EWG_Tamil_General_Information_Letter_2026.pdf');
+  link.setAttribute('download', `EWG_Tamil_General_Information_Letter_2026.pdf`);
   link.click();
   link.remove();
   }
@@ -132,8 +132,8 @@ export class ResponseComponent implements OnInit, OnDestroy, AfterViewInit {
   downloadFile2() {
   const link = this.renderer.createElement('a');
   link.setAttribute('target', '_self');
-  link.setAttribute('href', 'assets/files/EWG_General_Information_Letter_2024.pdf');
-  link.setAttribute('download', `EWG_General_Information_Letter_2024.pdf`);
+  link.setAttribute('href', 'assets/files/WFC_General_Information_Letter_May2026.pdf');
+  link.setAttribute('download', `WFC_General_Information_Letter_May2026.pdf`);
   link.click();
   link.remove();
   }
@@ -141,10 +141,19 @@ export class ResponseComponent implements OnInit, OnDestroy, AfterViewInit {
   downloadFile3() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_self');
-    link.setAttribute('href', 'assets/files/WFC_II_General_Information_Letter_Nov24.pdf');
-    link.setAttribute('download', `WFC_II_General_Information_Letter_Nov24.pdf`);
+    link.setAttribute('href', 'assets/files/WFC_II_General_Information_Letter_Jul26.pdf');
+    link.setAttribute('download', `WFC_II_General_Information_Letter_Jul26.pdf`);
     link.click();
     link.remove();
     }
+
+  downloadFile4() {
+    const link = this.renderer.createElement('a');
+    link.setAttribute('target', '_self');
+    link.setAttribute('href', 'assets/files/GPC_General_Information_Letter_2026.pdf');
+    link.setAttribute('download', `GPC_General_Information_Letter_2026.pdf`);
+    link.click();
+    link.remove();
+    }  
 
 }

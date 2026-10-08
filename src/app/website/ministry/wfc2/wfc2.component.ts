@@ -27,6 +27,7 @@ export class Wfc2Component implements OnInit, OnDestroy, AfterViewInit {
 
   summary ='';
   sdate='';
+  edate='';
 
   constructor(private userAccess: UserService, config: NgbCarouselConfig) {
     config.showNavigationArrows = false;
@@ -66,6 +67,27 @@ export class Wfc2Component implements OnInit, OnDestroy, AfterViewInit {
 
       let keyArr: any[] = Object.keys(this.createData.items)
       keyArr.forEach((key: any) => {
+        // console.log(this.createData.items[key].summary)
+        // push object with abbreviation, price and coin to array
+        if(this.createData.items[key].start.dateTime){
+          this.myArray.push({ summary: this.createData.items[key].summary,
+          sdate: this.createData.items[key].start.dateTime, edate: this.createData.items[key].end.dateTime });
+          // console.log(this.myArray);
+        } else if(this.createData.items[key].start.date){
+          this.myArray.push({ summary: this.createData.items[key].summary, sdate: this.createData.items[key].start.date, edate: this.createData.items[key].end.date });
+          // console.log(this.myArray);
+        }
+      });
+
+
+
+
+
+
+
+
+     /* let keyArr: any[] = Object.keys(this.createData.items)
+      keyArr.forEach((key: any) => {
 
         if(this.createData.items[key].start.dateTime){
           this.myArray.push({ summary: this.createData.items[key].summary, sdate: this.createData.items[key].start.dateTime });
@@ -74,7 +96,7 @@ export class Wfc2Component implements OnInit, OnDestroy, AfterViewInit {
           this.myArray.push({ summary: this.createData.items[key].summary, sdate: this.createData.items[key].start.date });
 
         }
-      });
+      }); */
       // ASC
       this.sortedArray = this.myArray.sort((a: any, b: any) => {
         return <any>new Date(a.sdate) - <any>new Date(b.sdate);

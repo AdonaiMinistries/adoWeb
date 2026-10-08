@@ -8,7 +8,7 @@
           <div class="button-container mx-3">
             <div class="card tagcard" style="background-color: #E5EDFF;">
               <div class="card-body text-dark">
-                <p class="tagline">Global Pastor's Conference</p>
+                <p class="tagline">Wholeness & Freedom Conference - Part 1</p>
               </div>
             </div>
           </div>
@@ -21,18 +21,16 @@
             <div class="mt-3 col-md-6">
               <!-- <img class="img w-50 mx-auto d-block" src="assets/img/AdonaiLogo.png"> -->
             <div class="card mx-3" style="width: fit-content;">
-                <h5 class="card-header text-center py-3"><img class="img w-25 mx-auto" src="assets/img/AdonaiLogo.png" style="width: 6rem;">Global Pastor's Conference Registration Form</h5>
+                <h5 class="card-header text-center py-3"><img class="img w-25 mx-auto" src="assets/img/AdonaiLogo.png" style="width: 6rem;">WFC - Part I Registration Form</h5>
                   <div class="card-body">
                     <form [formGroup]='gpcForm' novalidate class="form" (ngSubmit)='saveRegistration()'>
+
                       <div class="form-row mt-3">
                         <div class="form-group w-100" >
                             <label class="mb-2" style="font-size: larger;">Conference</label>
+                          <!--  <p style="color: red;">Please note that the registrations for the <b>Residential</b> delegates for August Conference are closed.</p> -->
                             <select formControlName="productinfo" class="form-control" name="productinfo" id="productinfo">
                               <option disabled>Choose the Conference Dates</option>
-                              <!-- <option value="wfcaprbangalore2024">Apr 7 to 13 (Eng)</option> -->
-                              <!--<option value="gpcsepbangalore2025">Sep 14 to 21</option> -->
-                              <!-- <option value="wfcjundehradun2025">Jun 8 to 14 (Eng/Hindi in Dehradun)</option>
-                              <option value="wfcaugbangalore2025">Aug 10 to 16 (Eng/Tamil)</option> -->
                               <option value="gpcsepbangalore2026">Sep 13 to 19</option>
                             </select>
                         </div>
@@ -239,7 +237,7 @@
                       <div class="form-row mt-3">
                         <!--Checkbox for agree-->
                         <input type="checkbox" formControlName="agree" class="col-md-2" style="vertical-align: top;">
-                        <label class="checkbox col-md-10 mt-0" style="font-size: small; padding-bottom: 0.4rem;">“I hereby confirm and declare that my attendance and presence at the Wholeness and Freedom Conference, organized by Adonai Ministries, is out of my own free will, volition and sound judgement”</label>
+                        <label class="checkbox col-md-10 mt-0" style="font-size: small; padding-bottom: 0.4rem;">“I hereby confirm and declare that my attendance and presence at the Global Pastors Conference, organized by Adonai Ministries, is out of my own free will, volition and sound judgement”</label>
                         <button type="button" class="btn btn-outline-default offset-md-2" href="#" (click)="open(consent)" style="font-size: xx-small; padding: 0rem 9px; font-weight: 400;">Read More</button>
 
                         <div class="alert alert-danger" *ngIf="f['agree'].errors?.['required'] && f['agree'].touched ">Must check in order to submit.</div>

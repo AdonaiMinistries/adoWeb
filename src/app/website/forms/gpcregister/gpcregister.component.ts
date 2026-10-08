@@ -48,8 +48,8 @@ export class GpcregisterComponent implements OnInit, OnDestroy, AfterViewInit {
       // dehNonresChild:number = 2800;
 
       // Bangalore Registration Amounts
-      res = 3500;
-      nonres = 2000;
+      res = 4500;
+      nonres = 3000;
       resChild = 1000;
       nonresChild = 1000;
 
@@ -142,7 +142,7 @@ export class GpcregisterComponent implements OnInit, OnDestroy, AfterViewInit {
     console.log(age);
 
     if (this.gpcForm.controls['paym'].value == 'Full Payment') {
-    if (this.gpcForm.controls['productinfo'].value == 'gpcsepbangalore2025' && this.gpcForm.controls['residential'].value == 'Residential') {
+    if (this.gpcForm.controls['productinfo'].value == 'gpcsepbangalore2026' && this.gpcForm.controls['residential'].value == 'Residential') {
 
       if (age < 6) {
         // console.log("Loop 8");

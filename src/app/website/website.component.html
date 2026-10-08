@@ -1,53 +1,140 @@
-<div class="wrapper">
-  <!-- Banner   -->
-    <div class="page-header clear-filter">
-        <div class="rellax-header rellax-header-sky" data-rellax-speed="-8">
-            <div class="page-header-image" style="background-image: url('assets/img/landing/hero_image.webp'); margin-top: -50px;">
-            </div>
+<div class="wrapper" style="padding: 0px;">
+
+    <!-- Hero Section Container -->
+    <div class="page-header clear-filter" 
+         style="position: relative; 
+                border-radius: 0px; 
+                overflow: hidden; 
+                height: 88vh; 
+                min-height: 600px; 
+                margin-bottom: 20px;">
+
+        <!-- Background Image -->
+        <div class="page-header-image" 
+             style="background-image: url('assets/img/landing/hero.webp'); 
+                    width: 100%; 
+                    height: 100%; 
+                    background-size: cover; 
+                    background-position: center;">
         </div>
 
-        <div class="rellax-text-container rellax-text mx-4 mx-md-5" >
-            <h1 class="h1-reo mx-1 mx-md-5 d-sm-block d-md-none" data-rellax-speed="-2">Welcome<br>To Adonai</h1>
-            <h1 class="h1-reo mx-1 mx-md-5 d-none d-md-block" data-rellax-speed="-2" style="font-size: 8rem;">Welcome<br>To Adonai</h1>
-            <h3 class="h3-description mx-1 mx-md-5" style="font-size: 1.2rem; margin-top: -10px; line-height: 1.2em;" data-rellax-speed="-1">A Church Where Hope and Healing Abound.</h3>
-            <h6 class="h3-description mx-1 mx-md-5" style="text-transform: uppercase; font-weight: 700;" data-rellax-speed="-1">Join Our Worship Services Live Every Sunday</h6>
-            <a type="button" class="d-inline-flex btn text-white mx-1 mx-md-5" style="float:left; border: 2px solid #dee2e6 !important; font-weight: 700; background-color: transparent; font-size: medium; margin-top: 1rem;" target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/@theadonaitube/streams" >Watch Live<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></a>
-        </div>
-    </div>
-    <!-- New Comers -->
-    <div class="container-fluid" style="background: rgb(255,255,255); background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 25%); background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 25%); background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 25%); position: relative; padding-top: 2rem; padding-bottom: 2rem; margin-top: -13rem;">
-      <div class="rellax-text-container" >
-          <div class="text-start">
+        <!-- Overlay Text Container (Centered & Constrained) -->
+        <div style="position: absolute; 
+               top: 0; 
+                    left: 0; 
+                    width: 100%; 
+                    height: 100%; 
+                    display: flex; 
+                    align-items: center; 
+                    justify-content: center; 
+                    padding: 0 8%;">
 
-            <div class="row" >
-                <div class="col-md-6 col-sm-12 my-auto">
-                    <h3 class="text-white" style="margin-bottom: 5px; font-weight: 600;">Connect with us</h3>
+            <div style="max-width: 650px; width: 100%; text-align: left; z-index: 5;">
+
+            <!-- DESKTOP TITLE -->
+            <h1 class="h1-reo d-none d-md-block"
+            style="
+                font-size: 8rem;
+                line-height: 0.95;
+                margin: 0 0 15px 0;
+                color: #ffffff;
+                font-weight: 700;
+            ">
+            Welcome<br>
+            To Adonai
+        </h1>
+
+
+        <!-- MOBILE TITLE -->
+        <h1 class="h1-reo d-block d-md-none"
+            style="
+                font-size: 4.25rem;
+                line-height: 0.95;
+                margin: 0 0 15px 0;
+                color: #ffffff;
+                font-weight: 700;
+            ">
+            Welcome<br>
+            To Adonai
+        </h1>
+
+
+        <!-- DESKTOP DESCRIPTION -->
+        <h3 class="h3-description d-none d-md-block"
+            style="
+                font-size: 1.75rem;
+                margin: 0 0 25px 0;
+                line-height: 1.3;
+                color: #ffffff;
+            ">
+            A Church Where Hope and Healing Abound.
+        </h3>
+
+
+        <!-- MOBILE DESCRIPTION -->
+        <h3 class="h3-description d-block d-md-none"
+            style="
+                font-size: 1rem;
+                margin: 0 0 20px 0;
+                line-height: 1.3;
+                color: #ffffff;
+            ">
+            A Church Where Hope and Healing Abound.
+        </h3>
+
+                <div class="d-flex align-items-center flex-wrap" style="gap: 15px;">
+                    <!-- New Here Button -->
+                    <a class="btn" 
+                       target="_blank" 
+                       rel="noreferrer noopener" 
+                       href="https://forms.gle/JgnbS1mepzsZLB5GA"
+                       style="font-size: 0.9rem; 
+                              font-weight: 600; 
+                              background-color: #e6343a; 
+                              border: 2px solid #e6343a !important; 
+                              color: #ffffff; 
+                              border-radius: 6px; 
+                              padding: 10px 22px;">
+                        NEW HERE
+                    </a>
+
+                    <!-- Watch Online Button -->
+                    <a class="btn" 
+                       target="_blank" 
+                       rel="noreferrer noopener" 
+                       href="https://www.youtube.com/@theadonaitube/streams"
+                       style="display: inline-flex; 
+                              align-items: center; 
+                              border: 2px solid #dee2e6 !important; 
+                              font-weight: 600; 
+                              background-color: transparent; 
+                              color: #ffffff; 
+                              font-size: 0.9rem; 
+                              margin: 0; 
+                              padding: 10px 22px; 
+                              border-radius: 6px;">
+                        WATCH ONLINE
+                        <i class="fa fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
                 </div>
-              <div class="col-md-3 col-6">
-                <a class="btn btn-primary" type="button" target="_blank" rel="noreferrer noopener" href="https://bit.ly/365RmaV" style="font-size: small; font-weight: 600; background-color: #e84e53;">NEW HERE ?</a>
-              </div>
-              <div class="col-md-3 col-6">
-                <a class="btn btn-primary" type="button" target="_blank" rel="noreferrer noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfN_NMm6iBxIUspl8owD0Qb96ak5hgTOL3U7W2s3Y9e6ryRYA/viewform" style="font-size: small; font-weight: 600; background-color: #e84e53;">GET UPDATES</a>
-              </div>
             </div>
-          </div>
-      </div>
-    </div>
-    <!-- Banner Section -->
-    <div class="section subscribe-line" style="background-color:#FFE5DD">
-      <div class="container">
-         <div class="text-center mx-1 mx-md-5 d-sm-block d-md-none">
-              <h3 class="title" style="margin-bottom: 0px;" >Touching Lives,</h3>
-              <h3 class="title" style="margin-bottom: 0px;">Reaching Communities</h3>
-              <h3 class="title" >and Discipling Nations.</h3>
-          </div>
-          <div class="text-center mx-1 mx-md-5 d-none d-md-block">
-            <h3 class="title" >Touching Lives, Reaching Communities and Discipling Nations</h3>
         </div>
-      </div>
     </div>
+
+    <!-- Mission Statement Banner -->
+    <div class="section subscribe-line" 
+         style="background-color: #ffffff; 
+                border-radius: 0px; 
+                padding: 30px 20px;">
+        <div class="container text-center">
+              <h3 class="title" style="font-weight: 800; margin: 8px;">
+                One Vision, Advancing God's Kingdom & Discipling 4 Generations
+              </h3>
+        </div>
+    </div>
+
     <!-- Campus -->
-    <div class="section section-basic-components">
+    <!--<div class="section section-basic-components">
       <div class="container">
           <div class="row mx-1 mx-md-2">
               <div class="col-lg-5 col-md-7 col-sm-12 mr-auto order-1">
@@ -58,24 +145,33 @@
               </div>
               <div class="col-lg-7 col-md-12 col-sm-12">
                   <div class="ratio-16x9">
-                      <!-- <img class="components-macbook" src="assets/img/ipad.png" alt=""> -->
-                      <img style="padding: 0 0 1.5rem 0;" src="assets/img/landing/campus_img_1.webp" alt="">
-                      <!-- <img class="share-btn-img" src="assets/img/presentation-page/share-btn.jpg" alt=""> -->
-                      <!-- <img class="coloured-card-btn-img" src="assets/img/presentation-page/coloured-card-with-btn.jpg" alt=""> -->
-                      <!-- <img class="coloured-card-img" src="assets/img/presentation-page/coloured-card.jpg" alt=""> -->
-                      <!-- <img class="social-img" src="assets/img/landing/campus_img_3.webp" alt=""> -->
-                      <!-- <img class="linkedin-btn-img" src="assets/img/landing/campus_img_2.webp" alt=""> -->
+                      <img class="components-macbook" src="assets/img/ipad.png" alt=""> 
+                    <img style="padding: 0 0 1.5rem 0;" src="assets/img/landing/campus_img_1.webp" alt="">
+                     <img class="share-btn-img" src="assets/img/presentation-page/share-btn.jpg" alt=""> 
+                      <img class="coloured-card-btn-img" src="assets/img/presentation-page/coloured-card-with-btn.jpg" alt="">
+                     <img class="coloured-card-img" src="assets/img/presentation-page/coloured-card.jpg" alt=""> 
+                       <img class="social-img" src="assets/img/landing/campus_img_3.webp" alt=""> 
+                      <img class="linkedin-btn-img" src="assets/img/landing/campus_img_2.webp" alt=""> 
                   </div>
               </div>
           </div>
-        </div>
-    </div>
+      </div>
+   </div> -->
 
     <!-- Service Timings -->
-    <div class="subscribe-line" style="background-color:#eee">
+   <div class="subscribe-line" style="background-color:#f2f2f2; border-radius: 0px;
+        padding: 40px 20px 40px;
+        margin: 0px 0px 80px">
         <div class="container">
            <div class="text-center">
-                <h3 class="title" style="margin-bottom: 0px;">Service Timings</h3>
+                <h3 class="title" style="font-weight:1000; margin-bottom: 0px;">Service Timings</h3>
+                 <p style="
+                color: #666;
+                max-width: 600px;
+                margin: auto;
+                font-size: 16px;">
+                Join us every Sunday for worship, fellowship and God's Word.
+            </p>
             </div>
                 <div class="row text-center">
                     <div class="col-6 col-sm-4">
@@ -99,7 +195,7 @@
                     <div class="col-6 col-sm-4">
                         <div class="card card-plain card-form-horizontal" style="margin-top: 45px; margin-bottom: 0px;">
                             <div class="card-content">
-                                <span class="badge" style="font-size: 1.2em; padding: 0.8rem; border-color: #000; background-color: #000;">8:00 AM</span>
+                                <span class="badge" style="font-size: 1.2em; padding: 0.8rem; border-color: #000; background-color: #000;">8:30 AM</span>
                                 <p style="font-size: medium; font-weight: 700; color: black; margin-top: 0.5rem; margin-bottom: 0.5rem; ">SUNDAY</p>
                                 <p style="font-size:large; font-weight: 500; color: black;">Tamil</p>
                             </div>
@@ -116,34 +212,210 @@
                     </div> -->
                 </div>
         </div>
+       
     </div>
-    <!-- Latest Sermon -->
-    <div class="subscribe-line subscribe-line-white" style="background-image: url('assets/img/landing/bg1.webp');">
-        <div class="container">
-            <div class="row mx-1 mx-md-2">
-                <div class="col-md-4 text-center">
-                    <h4 class="title text-white">Latest Sermon</h4>
-                    <!-- <p class="description text-primary">
-                        View All Sermons
-                    </p>  -->
-                    <button type="button" class="btn text-white" style="border: 2px solid #ffffff !important; background-color: transparent; font-size: medium; font-weight: 700;" [routerLink]="['/sermons']">View All Sermons<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                </div>
-                <div class="col-md-8 my-4">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/6tNmUg7ydckbn4RPfZeBse?utm_source=generator&theme=0" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
+
+
+
+   <!-- <div style="background-color: #f5f5f5; padding: 100px 0 80px 0; border-radius: 16px;
+        padding: 40px 20px 40px;
+        margin: 20px 30px 80px">
+
+    <div class="container">
+
+         Heading
+        <div class="text-center mb-5">
+            <h2 style="
+                font-weight: 800;
+                color: #222;
+                margin-bottom: 15px;">
+                Service Timings
+            </h2>
+
+            <p style="
+                color: #666;
+                max-width: 600px;
+                margin: auto;
+                font-size: 16px;">
+                Join us every Sunday for worship, fellowship and God's Word.
+            </p>
+        </div>
+
+        Cards 
+                <div class="row justify-content-center">
+
+             English Service 1
+            <div class="col-md-4 mb-4">
+                <div style="
+                    background: white;
+                    border-radius: 20px;
+                    padding: 40px 30px;
+                    text-align: center;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                    height: 100%;
+                ">
+
+                    <h4 style="font-weight:700;">
+                        English Service
+                    </h4>
+
+                    <p style="font-size:28px; font-weight:800; margin-bottom:5px;">
+                        8:30 AM
+                    </p>
+
+                    <p style="color:#777;">
+                        Sunday Morning
+                    </p>
                 </div>
             </div>
+
+            English Service 2 
+            <div class="col-md-4 mb-4">
+                <div style="
+                    background: white;
+                    border-radius: 20px;
+                    padding: 40px 30px;
+                    text-align: center;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                    height: 100%;
+                ">
+
+                    <h4 style="font-weight:700;">
+                        English Service
+                    </h4>
+
+                    <p style="font-size:28px; font-weight:800; margin-bottom:5px;">
+                        11:00 AM
+                    </p>
+
+                    <p style="color:#777;">
+                        Sunday Morning
+                    </p>
+                </div>
+            </div>
+
+            Tamil Service
+            <div class="col-md-4 mb-4">
+                <div style="
+                    background: white;
+                    border-radius: 20px;
+                    padding: 40px 30px;
+                    text-align: center;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                    height: 100%;
+                ">
+
+                    <h4 style="font-weight:700;">
+                        Tamil Service
+                    </h4>
+
+                    <p style="font-size:28px; font-weight:800; margin-bottom:5px;">
+                        8:30 AM
+                    </p>
+
+                    <p style="color:#777;">
+                        Sunday Morning
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Latest Sermon -->
+    <div class="subscribe-line subscribe-line-white"
+        style="
+        background-image: url('assets/img/landing/bg1.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0px;
+        padding: 50px 20px 60px;
+        margin: 0px 0px 30px;
+    ">
+
+    <div class="container">
+
+        <!-- LATEST SERMON -->
+        <div class="text-center">
+            <h3 class="title text-white"
+                style="
+                    font-weight: 700;
+                    margin-bottom: 40px;
+                ">
+                Latest Sermon
+            </h3>
+        </div>
+
+        <!-- SPOTIFY BOX -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-sm-11 col-12">
+
+                <iframe
+                    style="border-radius:12px;"
+                    src="https://open.spotify.com/embed/show/6tNmUg7ydckbn4RPfZeBse?utm_source=generator&theme=0"
+                    width="100%"
+                    height="252"
+                    frameBorder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- VIEW ALL SERMONS BUTTON -->
+        <div class="text-center"
+             style="margin-top: 30px;">
+
+            <button
+                type="button"
+                class="btn text-white"
+                style="
+                    border: 2px solid #ffffff !important;
+                    background-color: transparent;
+                    font-size: medium;
+                    font-weight: 700;
+                "
+                [routerLink]="['/sermons']">
+
+                View All Sermons
+                <i class="fa fa-arrow-right fa-lg"
+                   style="margin-left: 0.5rem; margin-top: 3px;">
+                </i>
+
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+
     <!-- Announcements -->
     <div class="subscribe-line" data-background-color="white">
       <div class="container">
          <div class="text-center mx-3">
-              <h2 class="title text-dark" style="font-size: 2.4rem;">Announcements</h2>
-              <div class="ratio-16x9 ">
-                <iframe src="https://player.vimeo.com/video/720941437?h=6072765ca0" style="height: 360px; width: 100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Announcements"></iframe>
-              </div>
-          </div>
-            <h3 class="title text-dark text-md-start mx-3 mx-md-4" style="margin-bottom: 2rem;">Upcoming Events</h3>
+            <h2 class="title text-dark text-center" style="font-weight: 1000; font-size: 2.4rem; padding-top: 20px; padding-bottom: 20px;">Announcements</h2>
+           
+            <div style="max-width: 800px; margin: 0 auto;">
+                <iframe src="https://player.vimeo.com/video/1201121358?h=a06db1a570&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="height: 360px; width: 100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Announcements"></iframe>
+            </div>
+         </div>
+            <h3 class="title text-dark text-center" style="font-weight: 1000; margin-bottom: 2rem; padding-top: 60px;">Upcoming Events</h3>
               <div class="text-dark mx-3 mx-md-4" *ngFor="let items of sortedArray; let i = index">
                 <div *ngIf="i < 3" class="row" style="align-items: center;">
                     <div class="col-md-3 col-6">
@@ -232,12 +504,21 @@
                           </div>
                       </div>
                     </div>
+                    <!-- Marriage Course -->
+                      <div *ngIf="items.summary =='Marriage Course'" class="col-md-3 col-sm-6" style="text-align: -webkit-right;">
+                      <div class="card-plain card-form-horizontal">
+                          <div class="card-content text-dark">
+                            <a type="button" class="d-inline-flex btn text-dark" style="border: 3px solid #111111 !important; font-weight: 700; background-color: transparent; font-size: medium;" target="_blank" rel="noreferrer noopener" href="https://docs.google.com/forms/d/e/1FAIpQLScwhcLrMhAR-jaQ5nLTpu0RrIsjxzVrACgnPUmSCY8v7O9b1Q/viewform?vc=0&c=0&w=1&flr=0">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></a>
+                          </div>
+                      </div>
+                    </div>
+
                 </div>
                 <hr *ngIf="i < 3"/>
             </div>
         </div>
     </div>
-    <!-- Carousel Section -->
+    <!-- Carousel - Conference Section -->
     <!-- <div class="section" id="carousel" style="background-color: #EAD8F5;">
         <div class="container">
             <h2 class="title text-dark text-center" style="padding-top: 0em;">Our Conferences</h2>
@@ -297,34 +578,38 @@
       </div> -->
 
       <!-- Conferences Section -->
-      <section class="section-cards mb-5" style="background-color: #EAD8F5;">
+      <section class="section-cards" style="background-color: #EAD8F5;
+        border-radius: 0px;
+        padding: 50px 20px 60px;
+        margin: 0px 0px 30px;">
         <div class="content-center">
-          <div class="container">
-            <h2 class="title text-dark text-center mx-auto" style="font-weight: 700;">Our Conferences</h2>
+          <div class="container"> 
+            <h2 class="title text-dark text-center" style="font-weight: 1000;">Our Conferences</h2>
+            <p style="max-width:620px; margin:15px auto 35px; color:#666; text-align: center;">Be refreshed, equipped, and transformed through conferences designed to deepen your relationship with God, strengthen your faith, and empower you to make a lasting impact.</p>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-
               <div class="col">
-                <div class="card">
+                <div class="card" style="margin-top: 10px;">
                   <img src="assets/img/landing/EWG_carousel.webp" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <!-- <h4 class="card-title">Encounter with God</h4> -->
+                    <!-- <h4 class="card-title">Global Pastor's Conference</h4> -->
                     <p class="card-text">This is a weekend programme that enables people to live life in abundance and experience freedom from rejection, curses and other areas they are struggling with. The teachings help establish a Godly foundation and answer various questions that people have about God. Through these sessions, we have witnessed many people healed and restored.</p>
-                    <button type="button" class="d-flex justify-content-start btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: transparent; font-size: medium;" [routerLink]="['/ewg']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
+                    <button type="button" class="d-flex justify-content-start btn text-dark mt-2" style="border: 2px solid #111111 !important; font-weight: 700; background-color: transparent; font-size: medium;" [routerLink]="['/ewg']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card">
-                  <img src="assets/img/landing/WF_carousel.webp" class="card-img-top" alt="...">
+                <div class="card" style="margin-top: 10px;">
+                  <img src="assets/img/landing/WFC_carousel.webp" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <!-- <h4 class="card-title">Wholeness and Freedom Conference - Part 1</h4> -->
+                    <!-- <h4 class="card-title">Global Pastor's Conference</h4> -->
                     <p class="card-text">This 7-day programme aids in bringing healing & wholeness to lives that have been damaged in spirit, soul, and body. The aim of this conference is to bring people an awareness of areas of captivity in their lives and establish a lifestyle of freedom. All of us undergo disappointment, hurt, and trauma; and if not dealt with, can often be held captive to them for life.</p>
-                    <button type="button" class="d-flex justify-content-start btn text-dark" style="border: 2px solid #111111 !important; font-weight: 700; background-color: transparent; font-size: medium;" [routerLink]="['/wfc1']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
+                    <button type="button" class="d-flex justify-content-start btn text-dark mt-2" style="border: 2px solid #111111 !important; font-weight: 700; background-color: transparent; font-size: medium;" [routerLink]="['/wfc1']">Register Now<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
                   </div>
                 </div>
               </div>
+
               <div class="col">
-                <div class="card">
+                <div class="card" style="margin-top: 10px;">
                   <img src="assets/img/landing/GPC_carousel.webp" class="card-img-top" alt="...">
                   <div class="card-body">
                     <!-- <h4 class="card-title">Global Pastor's Conference</h4> -->
@@ -339,7 +624,7 @@
       </section>
 
 
-      <!-- Conferences Section -->
+      <!-- Conferences Section old-->
       <!-- <section class="section-cards mb-5" style="background-color: #EAD8F5;">
         <div class="content-center">
           <div class="container">
@@ -416,54 +701,308 @@
 
       <!-- Get Connected -->
     <div class="subscribe-line">
-        <div class="container">
-           <div class="text-center">
-                <h2 class="title">Get Connected</h2>
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mx-1 mx-md-3" style="padding-top:20px;">
+            <h2 class="title" style="color: #000; font-weight: 1000;">Get Connected</h2>
+
+            <p style="max-width:620px; margin:15px auto 0px; color:#666;">
+                Find your place in our church family. Explore ministries designed for every stage of life and take your next step in faith, friendship, and service.
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="row justify-content-center mx-1 mx-md-3">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-12 mb-4">
+
+        <a [routerLink]="['/kingdom-kids']"
+           style="text-decoration:none; color:inherit;">
+
+            <div class="card border-0"
+                 style="
+                 height:300px;
+                 margin-bottom:25px;
+                 background-image:
+                 linear-gradient(
+                    to bottom,
+                    rgba(0,0,0,0.15) 0%,
+                    rgba(0,0,0,0.10) 35%,
+                    rgba(0,0,0,0.75) 100%
+                 ),
+                 url('assets/img/landing/kk.webp');
+                 background-size:cover;
+                 background-position:center;
+                 border-radius:10px;
+                 overflow:hidden;
+                 position:relative;
+                 cursor:pointer;
+                 box-shadow:0 5px 15px rgba(0,0,0,0.15);">
+
+                <!-- Card Content -->
+                <!-- Card Content -->
+              <div style="
+                  position:absolute;
+                  top:0;
+                  left:0;
+                  width:100%;
+                  height:100%;
+                  padding:30px;
+                  display:flex;
+                  flex-direction:column;
+                  justify-content:space-between;">
+
+              <!-- Title + Subtitle -->
+              <div>
+                <h3 class="text-white"
+                    style="
+                    font-weight:700;
+                    margin:0;
+                    font-size:1.75rem;">
+                    Kingdom Kids
+                </h3>
+                
+
+                 <p class="text-white"
+                    style="
+                    font-size:medium;
+                    margin-bottom:25px;">
+                    1 yr - 12 yrs  
+                  </p>
+              </div>
+
+              <!-- Button border-radius:8px;-->
+              <div>
+
+                <button
+                  type="button"
+                  class="btn text-white"
+                  style="
+                  border:2px solid #fff;
+                  font-weight:700;
+                  background-color:transparent;
+                  font-size:medium;
+                  padding:10px 28px;">
+
+                  KNOW MORE
+                  <i class="fa fa-arrow-right fa-lg"
+                    style="margin-left:12px;">
+                  </i>
+                </button>
+              </div>
             </div>
-                <div class="row text-center mx-1 mx-md-3">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card card-background" style="background-image:url('assets/img/landing/cell_group.webp'); margin-top: 45px; margin-bottom: 0px;">
-                            <div class="card-body text-start">
-                                <h3 class="card-title">Cell<br>Group</h3>
-                                <div class="card-footer text-start">
-                                    <button type="button" class="btn text-white" style="border: 2px solid #ffffff !important; background-color: transparent; font-size: medium; font-weight: 700;" [routerLink]="['/cells']">Know More<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                                </div>
-                            </div>
-                        </div>
+          </div>
+        </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-12 mb-4">
+
+        <a [routerLink]="['/cellgroups']"
+           style="text-decoration:none; color:inherit;">
+
+            <div class="card border-0"
+                 style="
+                 height:300px;
+                 margin-bottom:25px;
+                 background-image:
+                 linear-gradient(
+                    to bottom,
+                    rgba(0,0,0,0.15) 0%,
+                    rgba(0,0,0,0.10) 35%,
+                    rgba(0,0,0,0.75) 100%
+                 ),
+                 url('assets/img/landing/cell_group.webp');
+                 background-size:cover;
+                 background-position:center;
+                 border-radius:10px;
+                 overflow:hidden;
+                 position:relative;
+                 cursor:pointer;
+                 box-shadow:0 5px 15px rgba(0,0,0,0.15);">
+
+                <div style="
+                     position:absolute;
+                     top:0;
+                     left:0;
+                     width:100%;
+                     height:100%;
+                     padding:30px;
+                     display:flex;
+                     flex-direction:column;
+                     justify-content:space-between;">
+
+                    <!-- Title -->
+                    <div>
+                        <h3 class="text-white"
+                            style="
+                            font-weight:700;
+                            margin:0;
+                            font-size:1.75rem;">
+                            Cell Groups
+                        </h3>
+                         <p class="text-white"
+                           style="
+                           font-size:medium;
+                           margin-bottom:25px;">
+                            For Everyone
+                        </p>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card card-background" style="background-image:url('assets/img/landing/kk.webp'); margin-top: 45px; margin-bottom: 0px;">
-                            <div class="card-body text-start">
-                                <h3 class="card-title">Kingdom<br>Kids</h3>
-                                <div class="card-footer text-start">
-                                    <button type="button" class="btn text-white" style="border: 2px solid #ffffff !important; background-color: transparent; font-size: medium; font-weight: 700;" [routerLink]="['/kkids']">Know More<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                                </div>
-                            </div>
-                        </div>
+
+                    <!-- Bottom Content -->
+                    <div>
+                        <button
+                            type="button"
+                            class="btn text-white"
+                            style="
+                            border:2px solid #fff;
+                            font-weight:700;
+                            background-color:transparent;
+                            font-size:medium;
+                            padding:10px 28px;">
+
+                            KNOW MORE
+                            <i class="fa fa-arrow-right fa-lg"
+                               style="margin-left:12px;">
+                            </i>
+
+                        </button>
+
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card card-background" style="background-image:url('assets/img/landing/marriage_course.webp'); margin-top: 45px; margin-bottom: 0px;">
-                            <div class="card-body text-start">
-                                <h3 class="card-title">Marriage<br>Course</h3>
-                                <div class="card-footer text-start">
-                                    <button type="button" class="btn text-white" style="border: 2px solid #ffffff !important; background-color: transparent; font-size: medium; font-weight: 700;" [routerLink]="['/marriage']">Know More<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="row text-center mx-1 mx-md-3">
-                    <div class="col-12">
-                        <div class="card" style="background-image:url('assets/img/landing/bg1.webp');">
-                            <div class="card-body ">
-                                <h3 class="card-title text-start text-white">Join Our Church Family</h3>
-                                <div class="card-footer text-start">
-                                    <a type="button" target="_blank" rel="noreferrer noopener" class="btn text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSc0CI4iX4I2lG710xjcTghJWIi2zOwnfX0IxcfWCfP90RfSWg/viewform" style="border: 2px solid #ffffff !important; background-color: transparent; font-size: medium; font-weight: 700;">Join Us<i class="fa fa-arrow-right fa-lg" style="margin-left: 0.5rem; margin-top: 3px;"></i></a>
-                                </div>
-                            </div>
-                        </div>
+
+            </div>
+
+        </a>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-12 mb-4">
+
+        <a [routerLink]="['/marriage-course']"
+           style="text-decoration:none; color:inherit;">
+
+            <div class="card border-0"
+                 style="
+                 height:300px;
+                 margin-bottom:25px;
+                 background-image:
+                 linear-gradient(
+                    to bottom,
+                    rgba(0,0,0,0.15) 0%,
+                    rgba(0,0,0,0.10) 35%,
+                    rgba(0,0,0,0.75) 100%
+                 ),
+                 url('assets/img/landing/marriage_course.webp');
+                 background-size:cover;
+                 background-position:center;
+                 border-radius:10px;
+                 overflow:hidden;
+                 position:relative;
+                 cursor:pointer;
+                 box-shadow:0 5px 15px rgba(0,0,0,0.15);">
+
+                <div style="
+                     position:absolute;
+                     top:0;
+                     left:0;
+                     width:100%;
+                     height:100%;
+                     padding:30px;
+                     display:flex;
+                     flex-direction:column;
+                     justify-content:space-between;">
+
+                    <!-- Title -->
+                    <div>
+                        <h3 class="text-white"
+                            style="
+                            font-weight:700;
+                            margin:0;
+                            font-size:1.75rem;">
+                            Marriage Course
+                        </h3>
+                          <p class="text-white"
+                           style="
+                           font-size:medium;
+                           margin-bottom:25px;">
+                            For Married Couples
+                        </p>
                     </div>
+
+                    <!-- Bottom Content -->
+                    <div>
+                        <button
+                            type="button"
+                            class="btn text-white"
+                            style="
+                            border:2px solid #fff;
+                            font-weight:700;
+                            background-color:transparent;
+                            font-size:medium;
+                            padding:10px 28px;">
+
+                            KNOW MORE
+                            <i class="fa fa-arrow-right fa-lg"
+                               style="margin-left:12px;">
+                            </i>
+
+                        </button>
+
+                    </div>
+
                 </div>
+
+            </div>
+
+        </a>
+
+        </div>
+
+    <!-- Join Our Church Family -->
+<div class="col-lg-10 col-md-11 col-sm-12 mx-auto">
+
+        <div class="card-body text-center" style="padding: 40px;">
+
+            <h2 class="title" style="color: #000; font-weight: 1000;">Join Our Church Family</h2>
+
+            <p class="text-dark"
+               style="
+               max-width:650px;
+               margin:0 auto 25px;
+               color:#666;">
+                We'd love to help you get connected. Whether you're visiting
+                for the first time or looking to become part of our church
+                family, we'd love to hear from you.
+            </p>
+
+            <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc0CI4iX4I2lG710xjcTghJWIi2zOwnfX0IxcfWCfP90RfSWg/viewform"
+                class="btn d-inline-flex justify-content-center align-items-center"
+                style="
+                color:#fff;
+                background-color:#e84e53;
+                font-weight:700;
+                font-size:medium;
+                padding:10px 24px;
+                border-radius:4px;">
+
+                Join Us
+                <i class="fa fa-arrow-right fa-lg ms-2"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
         </div>
     </div>
 </div>

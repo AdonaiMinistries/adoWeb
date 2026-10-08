@@ -27,6 +27,7 @@ export class EwgComponent implements OnInit, OnDestroy, AfterViewInit {
 
   summary ='';
   sdate='';
+  edate='';
 
   constructor(private userAccess: UserService, config: NgbCarouselConfig) {
     config.showNavigationArrows = false;
@@ -78,10 +79,11 @@ export class EwgComponent implements OnInit, OnDestroy, AfterViewInit {
         // console.log(this.createData.items[key].summary)
         // push object with abbreviation, price and coin to array
         if(this.createData.items[key].start.dateTime){
-          this.myArray.push({ summary: this.createData.items[key].summary, sdate: this.createData.items[key].start.dateTime });
+          this.myArray.push({ summary: this.createData.items[key].summary,
+          sdate: this.createData.items[key].start.dateTime, edate: this.createData.items[key].end.dateTime });
           // console.log(this.myArray);
         } else if(this.createData.items[key].start.date){
-          this.myArray.push({ summary: this.createData.items[key].summary, sdate: this.createData.items[key].start.date });
+          this.myArray.push({ summary: this.createData.items[key].summary, sdate: this.createData.items[key].start.date, edate: this.createData.items[key].end.date });
           // console.log(this.myArray);
         }
       });
